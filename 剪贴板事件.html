@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.slt .box_m ul li:hover .l_up .tu {
+				transform: rotate(360deg);
+				-ms-transform: rotate(360deg);
+				/* IE 9 */
+				-moz-transform: rotate(360deg);
+				/* Firefox */
+				-webkit-transform: rotate(360deg);
+				/* Safari 和 Chrome */
+				-o-transform: rotate(360deg);
+				/* Opera */
+			}
+		</style>
+	</head>
+
+	<body>
+	</body>
+
+</html>
+<script>
+	(function() {
+		var sender = document.getElementById("msgSend"),
+			list = document.getElementById("msgList");
+
+		function parsteImage(imgObj) {
+			var flie = imgObj.getAsFile ? imgObj.getAsFile() : imgObj,
+				reder = new FileReader();
+
+			// 读取文件后将其显示在网页中
+			reader.onload = function(e) {
+				var img = new Image(),
+					p = document.createElement("p");
+				img.src = e.target.result;
+				p.appendChild(img);
+			}
+		}
+	});
+</script>

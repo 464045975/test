@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script src="bundle.js"></script>
+<script>
+//	   function lazyMan(name){
+//	   	     this.tasks = [];
+//	   	     var self = this;
+//	   	     var fn = (function (n){
+//	   	     	   var name = n;
+//	   	     	   return function(){
+//	   	     	   	   console.log("Hi! This is " + name + "!");
+//	   	     	   	   self.next();
+//	   	     	   }
+//	   	     })(name);
+//	   	     this.tasks.push(fn);
+//	   	     setTimeout(function(){
+//	   	     	   self.next();
+//	   	     },0);
+//	   }
+//	   // 事件调度函数
+//	   lazyMan.prototype.next = function(){
+//	   	   var fn = this.tasks.shift();
+//	   	   fn && fn();
+//	   }
+//	   lazyMan.prototype.eat = function(name){
+//	   	     var self = this;
+//	   	     var fn = function(name){
+//	   	     	return function(){
+//	   	     		    console.log("Eat " + name + " ~");
+//	   	     		    self.next();
+//	   	     	}
+//	   	     }(name);
+//	   	     this.tasks.push(fn);
+//	   	     return this; // 实现链式调用
+//	   }
+//	   lazyMan.prototype.sleep = function(time){
+//	   	     var self = this;
+//	   	     var fn = (function(time){
+//	   	     	   return function(){
+//	   	     	   	    setTimeout(function(){
+//	   	     	   	    	     console.log("Wake up after " + time + "s!");
+//	   	     	   	    },time * 1000);
+//	   	     	   }
+//	   	     })(time);
+//	   	     this.tasks.push(fn);
+//	   	     return this;
+//	   }
+//	   lazyMan.prototype.sleepFirst = function(time){
+//	   	    var self = this;
+//	   	    var fn = (function(time){
+//	   	    	    return function(){
+//	   	    	    	    setTimeout(function(){
+//	   	    	    	    	     console.log("Wake up after " + time + " s!");
+//	   	    	    	    	     self.next
+//	   	    	    	    }, time * 1000);
+//	   	    	    }
+//	   	    })(time);
+//	   	    this.tasks.unshift(fn);
+//	   	    return this;
+//	   }
+//	   
+//	   // 封装
+//	   function newLazyMan(name){
+//	   	    return new lazyMan(name);
+//	   }
+////	   
+////	   console.log(newLazyMan("hank"));
+////	   console.log(newLazyMan("hank").sleep(5).eat("dinner"));
+//	   console.log(newLazyMan("hank").eat("dinner").eat("super").eat("more"));
+//	   console.log(newLazyMan("hank").sleepFirst("4").eat("dinner").eat("super").eat("more"));
+	   
+</script>
